@@ -22,5 +22,19 @@ def merge_data(keys, data)
     
 end
 
+def find_cool(cool)
+arr = []
+  cool.each { |cool, array| puts "main key = #{cool}, array = #{array}."
+    array.each {|type| puts "type = #{type}."
+      type.each { |key, val| puts "key= #{key}, value = #{val}." 
+        if val == "cool"
+          arr << type
+        end
+      }
+    }
+  }
+  arr
+end
+
 
   
